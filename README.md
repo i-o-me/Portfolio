@@ -1,144 +1,93 @@
-# Ivan Oliver D. Mijares | Portfolio
+# Ivan Oliver D. Mijares
 
-A polished personal portfolio website showcasing web and mobile development work, project case studies, and technical capabilities. Built with plain HTML, CSS, and vanilla JavaScript for a lightweight, fast, and dependency-free setup.
+I am a Computer Science graduate and a developer focused on building practical, user-friendly digital products. I enjoy creating systems that connect strong backend logic with clear, accessible interfaces, and I am especially interested in solving real-world problems through technology.
 
-## Overview
+## About Me
 
-This portfolio is designed to present:
+I come from Midsayap, North Cotabato, Philippines, and I graduated with a Bachelor of Science in Computer Science from the University of Southern Mindanao in 2026. My work spans web development, mobile application development, and applied machine learning, with a strong interest in building complete solutions from concept to deployment.
 
-- personal branding and professional experience
-- selected software projects and technical case studies
-- responsive, accessible UI across desktop and mobile devices
-- light and dark theme support with a smooth user experience
+I enjoy working independently, learning new tools quickly, and translating technical ideas into products that people can actually use. I am motivated by projects that combine functionality, usability, and impact.
 
-## Live Preview
+## What I Do
 
-Open the site locally in a browser, or serve the project with a local static server:
+I build software across several areas:
 
-```bash
-python -m http.server 8000
-```
+- web applications and API-driven systems
+- mobile apps for everyday user needs
+- data-backed and AI-assisted features
+- practical solutions for productivity, recommendations, and analysis
 
-Then visit:
+I value clean code, thoughtful design, and systems that are easy to maintain and understand.
 
-```text
-http://localhost:8000
-```
+## Skills and Expertise
 
-The site can also be opened directly as a file using the browser's file system access.
+### Frontend and Mobile
+- Flutter
+- HTML
+- CSS
+- JavaScript
+- Responsive design
+- FlutterFlow
 
-## Project Structure
+### Backend and APIs
+- Python
+- Django
+- PHP
+- Laravel
+- FastAPI
+- REST API design
+- Third-party API integration
 
-```text
-portfolio/
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   ├── data.js
-│   ├── render.js
-│   └── main.js
-├── assets/
-│   └── images/
-├── README.md
-└── AGENT.MD
-```
+### Databases and Systems
+- PostgreSQL
+- MySQL
+- Supabase
+- Firebase Realtime Database
+- SQLite
 
-## Key Files
+### AI and Machine Learning
+- Applied ML
+- DistilBERT fine-tuning
+- Data analysis and model experimentation
+- AI-assisted workflows
 
-- `index.html` — main page structure and script loading
-- `css/styles.css` — all layout, theme, and visual styling
-- `js/data.js` — project content, profile details, skills, and metadata
-- `js/render.js` — DOM rendering for sections and project cards
-- `js/main.js` — interaction logic such as filters, theme toggle, and modal behavior
+### Tools
+- Git and GitHub
+- VS Code
+- Laragon
+- Vercel
+- Railway
 
-## Editing Content
+## Professional Focus
 
-All portfolio content is centralized in `js/data.js`.
+I am interested in opportunities where I can contribute to meaningful digital products, work with a team, and keep learning from real projects. My strengths include:
 
-### Update personal information
+- building end-to-end applications
+- understanding both technical and user-facing requirements
+- adapting to new tools and frameworks quickly
+- communicating technical ideas clearly
+- solving problems in a practical, results-oriented way
 
-Edit the `PROFILE` object in `js/data.js`:
+## Projects
 
-```js
-const PROFILE = {
-  name: 'Ivan Oliver D. Mijares',
-  role: 'Computer Science graduate · Web and mobile developer',
-  photo: null,
-  // ...
-};
-```
+My portfolio includes projects in:
 
-### Add a new project
+- personal finance tracking
+- recipe and community platforms
+- nutrition and lifestyle recommendation apps
+- multilingual fake news detection
+- AI-enhanced web experiences
 
-Add a new entry to the `PROJECTS` array:
+These projects reflect my interest in combining technical problem-solving with real user value.
 
-```js
-{
-  id: 'my-new-project',
-  title: 'My New Project',
-  summary: 'A short description of the project and its purpose.',
-  details: [
-    'Key feature one',
-    'Key feature two'
-  ],
-  tech: [
-    { name: 'Django', iconType: 'devicon', iconClass: 'devicon-django-plain' },
-    { name: 'Chart.js', iconType: 'lucide', iconClass: 'bar-chart-2' }
-  ],
-  categories: ['web'],
-  repo: 'https://github.com/your-username/your-repo',
-  demo: null,
-  image: 'assets/images/my-project.png'
-}
-```
+## Location
 
-### Add screenshots and profile images
+Midsayap, North Cotabato, Philippines
 
-1. Place the image files inside `assets/images/`.
-2. Update the relevant value in `js/data.js`:
-   - profile photo: `PROFILE.photo`
-   - project cover or gallery images: `image` / `images`
-3. Prefer a 16:10 aspect ratio for project screenshots for a clean, consistent layout.
+## Contact
 
-### Tech icon usage
+I am open to collaboration, internships, freelance work, and professional opportunities related to software development and product building.
 
-- Devicon: Use classes from [devicon.dev](https://devicon.dev/)
-- Lucide: Use icon names from [lucide.dev](https://lucide.dev/)
+- GitHub: https://github.com/i-o-me
+- Email: ivanmijares018@gmail.com
 
-## Deploying to GitHub Pages
-
-1. Push the repository to GitHub.
-2. Open the repository on GitHub.
-3. Go to **Settings** > **Pages**.
-4. Under **Source**, choose **Deploy from a branch**.
-5. Select the `main` branch and the `/ (root)` folder.
-6. Save the settings.
-
-The portfolio will be published at:
-
-```text
-https://your-username.github.io/portfolio/
-```
-
-## Features
-
-- responsive, mobile-first layout
-- dark and light theme support with saved preference persistence
-- category-based project filtering
-- interactive project detail modals
-- smooth scroll and reveal effects
-- accessible navigation and keyboard-friendly controls
-- sticky header and back-to-top button
-- clipboard-based email copy interaction
-- no build step or framework dependency required
-
-## Dependencies
-
-- [Inter](https://fonts.google.com/specimen/Inter)
-- [Lucide Icons](https://lucide.dev/)
-- [Devicon](https://devicon.dev/)
-
-## License
-
-This project is intended for personal portfolio use and can be adapted for your own website or professional portfolio.
