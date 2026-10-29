@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivan Oliver D. Mijares | Web and Mobile Developer</title>
+  <meta name="description" content="Portfolio of Ivan Oliver D. Mijares, a Computer Science graduate and web/mobile developer from the Philippines.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ivan Oliver D. Mijares | Web and Mobile Developer">
+  <meta property="og:description" content="Portfolio of Ivan Oliver D. Mijares, a Computer Science graduate and web/mobile developer from the Philippines.">
+  <meta property="og:type" content="website">
+
+  <!-- Inline SVG Favicon (No emoji) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232B6CB0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='16 18 22 12 16 6'%3E%3C/polyline%3E%3Cpolyline points='8 6 2 12 8 18'%3E%3C/polyline%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Devicon CSS (Pinned v2.16.0) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Inline Theme Script to Prevent Flash of Wrong Theme -->
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || t === 'light') {
+          document.documentElement.setAttribute('data-theme', t);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header id="site-header" class="header">
+    <div class="container header__inner">
+      
+      <nav id="site-nav" class="nav" aria-label="Main navigation">
+        <div id="nav-links" class="nav__links">
+          <!-- Rendered by JS -->
+        </div>
+      </nav>
+      <div class="header__actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
+          <i data-lucide="moon" aria-hidden="true"></i>
+        </button>
+        <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main-content">
+    <section id="hero" class="hero">
+      <div class="container">
+        <div id="hero-content" class="hero__inner">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title">About</h2>
+        <div id="about-content" class="reveal">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div id="skills-content" class="reveal">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <div id="project-filters" class="reveal">
+          <!-- Rendered by JS -->
+        </div>
+        <div id="projects-grid" class="reveal">
+          <!-- Rendered by JS -->
+        </div>
+        <div id="more-github" class="reveal">
+          <!-- More on GitHub - Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section id="github-repos" class="section section--compact" style="display:none;">
+      <div class="container">
+        <h2 class="section__title">Recent Repositories</h2>
+        <div id="github-repos-content">
+          <!-- Rendered by JS from GitHub API -->
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section__title">Experience and Education</h2>
+        <div id="timeline-content" class="reveal">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section__title">Certifications</h2>
+        <div id="certifications-content" class="reveal">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section__title">Get in Touch</h2>
+        <div id="contact-content" class="reveal">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div id="footer-content">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <dialog id="project-modal" class="modal">
+    <div class="modal__inner">
+      <button id="modal-close" class="icon-btn modal__close" aria-label="Close dialog">
+        <i data-lucide="x" aria-hidden="true"></i>
+      </button>
+      <div id="modal-content">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top icon-btn" aria-label="Back to top">
+    <i data-lucide="arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script defer src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script defer src="js/data.js"></script>
+  <script defer src="js/render.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
